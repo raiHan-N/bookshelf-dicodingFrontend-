@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+button {
+    background-color: cadetblue;
+    border-radius: 3px;
+    border: 0;
+    padding: 5px;
+    color: white;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+input {
+    border: 2px solid cadetblue;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.head-bar{
+    width: 100%;
+    padding: 15px;
+    background-color: cadetblue;
+    font-size: 40px;
+    font-weight: bolder;
+    list-style: none;
+    letter-spacing: 3px;
+    color: white;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin: 45px;
+    display: grid;
+    gap: 10px;                                                                                                  
+    grid-template-areas: 
+        'left right';
+}
+.content .left-content {
+    grid-area: left;
+}
+.content .right-content {
+    display: grid;
+    grid-area: right;
+    gap: 5px;
+}
+.input-data {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px;
+    width: fit-content;
+    border: 5px solid cadetblue;
+    border-radius: 20px;
+    box-shadow: 0 30px 20px -15px rgba(145, 145, 145, 0.2);
+    color: cadetblue;
+}
+
+.search-data {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 100px;
+        width: fit-content;
+        height: fit-content;
+        font-weight: bold;
+        border: 5px solid cadetblue;
+        border-radius: 20px;
+        box-shadow: 0 30px 20px -15px rgba(145, 145, 145, 0.2);
+        color: cadetblue;    
+}
+
+
+.bookShelf {
+    text-align: center;
+    padding-top: 10px;
+    width: 525px;
+    border: 5px solid cadetblue;
+    border-radius: 20px;
+    box-shadow: 0 30px 20px -15px rgba(145, 145, 145, 0.2);
+    color: cadetblue;
+}
+
+.list-item {
+    text-align: center;
+    padding: 1px;
+    margin: 2px;
+    border: 5px solid cadetblue;
+    border-radius: 20px;
+    box-shadow: 0 30px 20px -15px rgba(145, 145, 145, 0.2);
+    color: cadetblue;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.check-button,.trash-button,.undo-button {
+    margin: 0 10px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 8px;
+    background-color: cadetblue;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+
+}
+
+/* responsive */
+@media screen and (max-width: 767px) {
+    
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 13px;
+    }
+
+    .head-bar {
+        font-size: 30px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input {
+        font-size: 10.5px;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-data {
+        margin: 10px 0;
+    }
+
+    .bookShelf {
+        width: 389px;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-data {
+        margin: 10px 0;
+    }
+
+    .bookShelf {
+        width: 512px;
+        margin: 10px 0;
+    }
+}
